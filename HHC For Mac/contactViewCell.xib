@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ContactDetailView">
+            <connections>
+                <outlet property="altExt" destination="iui-gx-wtC" id="zMr-Ch-tNW"/>
+                <outlet property="altPhone" destination="l8L-eO-l9z" id="gVo-9N-0Fs"/>
+                <outlet property="bussinessPhone" destination="IGD-M1-ibR" id="iE4-DT-jqd"/>
+                <outlet property="contactName" destination="0Hf-qV-Zsj" id="PgL-qP-6D5"/>
+                <outlet property="department" destination="LSi-ev-5MW" id="1CD-gQ-Tjh"/>
+                <outlet property="ext" destination="DN0-MT-UrA" id="SBE-cE-5du"/>
+                <outlet property="homeAddress1" destination="hlV-Xp-w13" id="o7w-Np-8cv"/>
+                <outlet property="homeAddress2" destination="bpQ-RZ-WKK" id="i1j-75-4Lq"/>
+                <outlet property="homeAddress3" destination="fiR-nO-GGe" id="3do-pY-8aM"/>
+                <outlet property="homeCity" destination="GiD-Uc-6pS" id="EPq-FR-jSX"/>
+                <outlet property="homeCountry" destination="ciq-Ea-ayG" id="Z0R-qo-4Qu"/>
+                <outlet property="homePhone" destination="Kfo-3T-9PB" id="eV8-H9-UKg"/>
+                <outlet property="homeState" destination="tMt-Y8-3Bv" id="Scq-Iw-hSP"/>
+                <outlet property="homeZip" destination="g82-zl-Uk0" id="qX6-9j-PLf"/>
+                <outlet property="idStatus" destination="ubl-a7-ZOp" id="nt3-3c-Mfl"/>
+                <outlet property="lastResults" destination="0yj-9X-5DK" id="wI0-cU-hZC"/>
+                <outlet property="mobilePhone" destination="8zG-OX-KAv" id="kFv-mJ-ccO"/>
+                <outlet property="personalEmail" destination="R4N-wK-Ezy" id="ICv-Xa-5xU"/>
+                <outlet property="primaryEmail" destination="5Zm-iK-9rs" id="aZa-IW-pZ0"/>
+                <outlet property="titleLabel" destination="yjy-Gb-vAC" id="VDc-t2-4Kr"/>
+                <outlet property="website" destination="pgo-Jk-fw9" id="e8E-LM-FLc"/>
+                <outlet property="workAddress1" destination="mzg-9C-vVF" id="Fbp-a0-hOD"/>
+                <outlet property="workAddress2" destination="yX8-uu-Z9w" id="HPv-Ib-87c"/>
+                <outlet property="workAddress3" destination="8fn-3s-cZS" id="nbD-uF-c9s"/>
+                <outlet property="workCity" destination="UTs-SC-oyc" id="IVq-ZN-Kba"/>
+                <outlet property="workCountry" destination="u6j-zu-9kZ" id="CLd-Wk-U5E"/>
+                <outlet property="workState" destination="p3c-5t-bBU" id="Oa2-0W-ron"/>
+                <outlet property="workZip" destination="46H-ld-Hio" id="fk4-y5-im8"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <tableCellView identifier="cell1" id="tCV-yK-KXG" customClass="contactViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="G7l-ST-6Jg">
+                    <rect key="frame" x="0.0" y="20" width="600" height="100"/>
+                    <subviews>
+                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="hmi-75-r48">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                            <subviews>
+                                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="13y-xb-6ot">
+                                    <rect key="frame" x="20" y="20" width="60" height="60"/>
+                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="CONTACTS" id="z1P-Zl-Whq"/>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="13y-xb-6ot" secondAttribute="bottom" constant="20" id="98d-Eu-JdW"/>
+                                <constraint firstAttribute="width" constant="100" id="IDW-Cn-XMk"/>
+                                <constraint firstItem="13y-xb-6ot" firstAttribute="top" secondItem="hmi-75-r48" secondAttribute="top" constant="20" id="RTr-hy-isa"/>
+                                <constraint firstItem="13y-xb-6ot" firstAttribute="leading" secondItem="hmi-75-r48" secondAttribute="leading" constant="20" id="eZN-8h-kNE"/>
+                                <constraint firstAttribute="height" constant="100" id="qHU-Mr-Bwb"/>
+                                <constraint firstAttribute="trailing" secondItem="13y-xb-6ot" secondAttribute="trailing" constant="20" id="sZ7-xe-mDW"/>
+                            </constraints>
+                        </customView>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yjy-Gb-vAC">
+                            <rect key="frame" x="138" y="38" width="400" height="17"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="President" id="z46-Vl-sld">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LSi-ev-5MW">
+                            <rect key="frame" x="138" y="20" width="400" height="17"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Department" id="zoO-nN-GUz">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Hf-qV-Zsj">
+                            <rect key="frame" x="138" y="60" width="400" height="23"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="Chris Huffman" id="y6e-1I-Bsa">
+                                <font key="font" metaFont="systemSemibold" size="19"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="hmi-75-r48" firstAttribute="leading" secondItem="G7l-ST-6Jg" secondAttribute="leading" id="1d5-3q-1Da"/>
+                        <constraint firstItem="hmi-75-r48" firstAttribute="top" secondItem="G7l-ST-6Jg" secondAttribute="top" id="SKE-Rr-KNd"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="G7l-ST-6Jg" firstAttribute="top" secondItem="tCV-yK-KXG" secondAttribute="top" id="6Cu-yd-ozk"/>
+                <constraint firstItem="G7l-ST-6Jg" firstAttribute="leading" secondItem="tCV-yK-KXG" secondAttribute="leading" id="AHJ-9w-PPy"/>
+                <constraint firstAttribute="trailing" secondItem="G7l-ST-6Jg" secondAttribute="trailing" id="pkq-a4-nKU"/>
+                <constraint firstAttribute="bottom" secondItem="G7l-ST-6Jg" secondAttribute="bottom" constant="20" id="xZ6-lf-6Pf"/>
+            </constraints>
+            <connections>
+                <outlet property="contactInforHeaderBackground" destination="TZR-PU-rVN" id="Poc-SP-CD5"/>
+                <outlet property="homeHeaderBackGround" destination="2Kr-ci-t0S" id="kgq-5u-VZK"/>
+                <outlet property="imageBackGround" destination="hmi-75-r48" id="ymT-08-BDI"/>
+                <outlet property="lightBackgroundColor" destination="G7l-ST-6Jg" id="qx2-S6-wBL"/>
+                <outlet property="otherHeadeBackground" destination="q4A-bs-qVL" id="cUZ-jD-hhf"/>
+                <outlet property="workHeaderBackground" destination="tmG-1f-N7Z" id="ih0-b1-rVl"/>
+            </connections>
+            <point key="canvasLocation" x="249" y="-48"/>
+        </tableCellView>
+        <tableCellView identifier="cell2" id="cUz-LK-AcK" customClass="contactViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="285"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="TZR-PU-rVN">
+                    <rect key="frame" x="0.0" y="255" width="600" height="30"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mZQ-iD-93R">
+                            <rect key="frame" x="204" y="6" width="193" height="19"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="justified" title="CONTACT INFORMATION" id="Uup-Aw-frS">
+                                <font key="font" metaFont="systemMedium" size="16"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="FZT-j9-LOH"/>
+                        <constraint firstItem="mZQ-iD-93R" firstAttribute="centerY" secondItem="TZR-PU-rVN" secondAttribute="centerY" id="MWF-0B-tdN"/>
+                        <constraint firstItem="mZQ-iD-93R" firstAttribute="centerX" secondItem="TZR-PU-rVN" secondAttribute="centerX" id="YgZ-zE-YMO"/>
+                    </constraints>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DNZ-gz-LQR">
+                    <rect key="frame" x="18" y="218" width="86" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Primary email" id="cKW-gR-p7F">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Zm-iK-9rs">
+                    <rect key="frame" x="18" y="200" width="263" height="19"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="Bsf-QA-rtF">
+                        <font key="font" metaFont="menu" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fUm-ML-TJF">
+                    <rect key="frame" x="344" y="218" width="92" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Personal email" id="bpk-Av-NvD">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R4N-wK-Ezy">
+                    <rect key="frame" x="344" y="200" width="272" height="19"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="5Vr-q6-ARn">
+                        <font key="font" metaFont="menu" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="95u-h8-qEL">
+                    <rect key="frame" x="18" y="167" width="51" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="website" id="BpD-HS-E93">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pgo-Jk-fw9">
+                    <rect key="frame" x="18" y="149" width="269" height="19"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="wNp-s9-ncY">
+                        <font key="font" metaFont="system" size="16"/>
+                        <color key="textColor" red="0.98039215686274506" green="0.31764705882352939" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f5H-wE-rsT">
+                    <rect key="frame" x="18" y="122" width="107" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Bussiness phone" id="dpz-qT-mXx">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IGD-M1-ibR">
+                    <rect key="frame" x="18" y="104" width="269" height="19"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="2nn-w9-ntu">
+                        <font key="font" metaFont="menu" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l8L-eO-l9z">
+                    <rect key="frame" x="18" y="59" width="269" height="19"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="qlF-4t-uZM">
+                        <font key="font" metaFont="menu" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hi2-TB-3Vc">
+                    <rect key="frame" x="18" y="32" width="82" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Home phone" id="aP5-7W-feE">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yGo-0e-Ww2">
+                    <rect key="frame" x="18" y="76" width="66" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Alt. phone" id="ZGr-4q-efT">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jv3-bP-Jsk">
+                    <rect key="frame" x="344" y="122" width="24" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Ext" id="L2s-zk-rc8">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DN0-MT-UrA">
+                    <rect key="frame" x="344" y="105" width="272" height="19"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="IWA-NS-Poi">
+                        <font key="font" metaFont="menu" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7SE-8L-bXB">
+                    <rect key="frame" x="344" y="76" width="51" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Alt. Ext." id="cxi-fV-EdD">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iui-gx-wtC">
+                    <rect key="frame" x="344" y="58" width="272" height="19"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="Ews-D3-5XT">
+                        <font key="font" metaFont="menu" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0om-ox-eQE">
+                    <rect key="frame" x="345" y="32" width="87" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Mobile phone" id="vMd-Xo-gLq">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8zG-OX-KAv">
+                    <rect key="frame" x="344" y="13" width="272" height="19"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="qvK-QZ-pdA">
+                        <font key="font" metaFont="menu" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kfo-3T-9PB">
+                    <rect key="frame" x="18" y="13" width="269" height="19"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="m3O-Pc-EdO">
+                        <font key="font" metaFont="menu" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="TZR-PU-rVN" firstAttribute="leading" secondItem="cUz-LK-AcK" secondAttribute="leading" id="gYt-Ov-ote"/>
+                <constraint firstAttribute="trailing" secondItem="TZR-PU-rVN" secondAttribute="trailing" id="hGq-JI-8pL"/>
+                <constraint firstItem="TZR-PU-rVN" firstAttribute="top" secondItem="cUz-LK-AcK" secondAttribute="top" id="xdz-NB-KOf"/>
+            </constraints>
+            <point key="canvasLocation" x="249" y="249.5"/>
+        </tableCellView>
+        <tableCellView identifier="cell3" id="apd-zb-lG8" customClass="contactViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="245"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="tmG-1f-N7Z">
+                    <rect key="frame" x="0.0" y="215" width="600" height="30"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hIq-Uh-k9P">
+                            <rect key="frame" x="235" y="6" width="130" height="19"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="WORK ADDRESS" id="nai-7L-YQA">
+                                <font key="font" metaFont="systemMedium" size="16"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="hIq-Uh-k9P" firstAttribute="centerY" secondItem="tmG-1f-N7Z" secondAttribute="centerY" id="Z1n-Cs-bAH"/>
+                        <constraint firstAttribute="height" constant="30" id="qMB-OZ-Qeq"/>
+                        <constraint firstItem="hIq-Uh-k9P" firstAttribute="centerX" secondItem="tmG-1f-N7Z" secondAttribute="centerX" id="qrY-HO-Aar"/>
+                    </constraints>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xds-vM-GiC">
+                    <rect key="frame" x="20" y="182" width="64" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Address 1" id="8KJ-en-fD0">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mzg-9C-vVF">
+                    <rect key="frame" x="20" y="164" width="269" height="19"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="lWE-LX-eR6">
+                        <font key="font" metaFont="menu" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="607-XB-FBl">
+                    <rect key="frame" x="351" y="182" width="65" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Address 2" id="gog-An-9AN">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O4G-z9-nWS">
+                    <rect key="frame" x="20" y="134" width="66" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Address 3" id="oky-cW-tqu">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dDh-ic-mCo">
+                    <rect key="frame" x="351" y="134" width="28" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="City" id="cLv-lR-Lev">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IWc-o7-hc6">
+                    <rect key="frame" x="351" y="78" width="24" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Zip" id="laX-LL-qtv">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2bM-0B-OVC">
+                    <rect key="frame" x="20" y="25" width="53" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Country" id="lRL-2j-1dV">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yX8-uu-Z9w">
+                    <rect key="frame" x="351" y="164" width="270" height="19"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="d01-06-Mts">
+                        <font key="font" metaFont="menu" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8fn-3s-cZS">
+                    <rect key="frame" x="20" y="114" width="269" height="19"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="x4C-mg-IZk">
+                        <font key="font" metaFont="menu" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UTs-SC-oyc">
+                    <rect key="frame" x="351" y="114" width="270" height="19"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="yqr-zW-rKt">
+                        <font key="font" metaFont="menu" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="46H-ld-Hio">
+                    <rect key="frame" x="351" y="56" width="269" height="19"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="a7h-xZ-MKX">
+                        <font key="font" metaFont="menu" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p3c-5t-bBU">
+                    <rect key="frame" x="20" y="56" width="269" height="19"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="B1t-ew-fDJ">
+                        <font key="font" metaFont="menu" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u6j-zu-9kZ">
+                    <rect key="frame" x="20" y="7" width="269" height="19"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="VZf-GG-JbK">
+                        <font key="font" metaFont="menu" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qOi-hy-SnO">
+                    <rect key="frame" x="20" y="78" width="36" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="State" id="l5z-gH-60Q">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="tmG-1f-N7Z" firstAttribute="top" secondItem="apd-zb-lG8" secondAttribute="top" id="6lF-9A-M2v"/>
+                <constraint firstAttribute="trailing" secondItem="tmG-1f-N7Z" secondAttribute="trailing" id="AW4-rD-Uxx"/>
+                <constraint firstAttribute="trailing" secondItem="tmG-1f-N7Z" secondAttribute="trailing" id="AWm-Pa-R9r"/>
+                <constraint firstAttribute="trailing" secondItem="tmG-1f-N7Z" secondAttribute="trailing" id="BUf-QJ-Drf"/>
+                <constraint firstItem="tmG-1f-N7Z" firstAttribute="leading" secondItem="apd-zb-lG8" secondAttribute="leading" id="OyJ-Th-Qvh"/>
+                <constraint firstItem="tmG-1f-N7Z" firstAttribute="top" secondItem="apd-zb-lG8" secondAttribute="top" id="WTO-Sa-KGt"/>
+                <constraint firstItem="tmG-1f-N7Z" firstAttribute="leading" secondItem="apd-zb-lG8" secondAttribute="leading" id="gDk-Aj-NFE"/>
+                <constraint firstItem="tmG-1f-N7Z" firstAttribute="top" secondItem="apd-zb-lG8" secondAttribute="top" id="gFX-Cf-BIP"/>
+                <constraint firstItem="tmG-1f-N7Z" firstAttribute="leading" secondItem="apd-zb-lG8" secondAttribute="leading" id="rzQ-Mm-6Pj"/>
+            </constraints>
+            <point key="canvasLocation" x="249" y="601"/>
+        </tableCellView>
+        <tableCellView identifier="cell4" id="NIL-vJ-gNV" customClass="contactViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="245"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="2Kr-ci-t0S">
+                    <rect key="frame" x="0.0" y="215" width="600" height="30"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7y3-XX-XcA">
+                            <rect key="frame" x="236" y="6" width="129" height="19"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="HOME ADDRESS" id="iNu-4Y-MYi">
+                                <font key="font" metaFont="systemMedium" size="16"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="7y3-XX-XcA" firstAttribute="centerY" secondItem="2Kr-ci-t0S" secondAttribute="centerY" id="XyM-NC-LHU"/>
+                        <constraint firstItem="7y3-XX-XcA" firstAttribute="centerX" secondItem="2Kr-ci-t0S" secondAttribute="centerX" id="c8n-0h-5bo"/>
+                        <constraint firstAttribute="height" constant="30" id="o0M-uJ-2Lk"/>
+                    </constraints>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tj2-CM-A4c">
+                    <rect key="frame" x="20" y="182" width="64" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Address 1" id="Jyu-1X-vqH">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hlV-Xp-w13">
+                    <rect key="frame" x="20" y="166" width="262" height="19"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="3Lw-zL-6Kf">
+                        <font key="font" metaFont="menu" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7LV-Sh-QPD">
+                    <rect key="frame" x="357" y="183" width="65" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Address 2" id="isi-EH-Dqj">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nz7-ff-oEv">
+                    <rect key="frame" x="20" y="133" width="66" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Address 3" id="MLi-RI-9bW">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="meo-VR-p1f">
+                    <rect key="frame" x="357" y="134" width="28" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="City" id="XMa-Oh-Y4i">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2LM-OS-QCt">
+                    <rect key="frame" x="20" y="78" width="36" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="State" id="ZTz-NS-Rav">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k4P-4o-kab">
+                    <rect key="frame" x="357" y="78" width="24" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Zip" id="wzZ-Cg-QMs">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gWL-WM-1ak">
+                    <rect key="frame" x="20" y="28" width="53" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Country" id="NCw-bO-O8k">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bpQ-RZ-WKK">
+                    <rect key="frame" x="357" y="166" width="265" height="19"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="6cY-M4-92F">
+                        <font key="font" metaFont="menu" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fiR-nO-GGe">
+                    <rect key="frame" x="20" y="114" width="262" height="19"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="ATh-N1-xkl">
+                        <font key="font" metaFont="menu" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GiD-Uc-6pS">
+                    <rect key="frame" x="357" y="115" width="265" height="19"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="cCk-66-pa7">
+                        <font key="font" metaFont="menu" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g82-zl-Uk0">
+                    <rect key="frame" x="357" y="62" width="263" height="19"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="ftm-ds-FOX">
+                        <font key="font" metaFont="menu" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tMt-Y8-3Bv">
+                    <rect key="frame" x="20" y="62" width="262" height="19"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="7pX-m8-ymp">
+                        <font key="font" metaFont="menu" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ciq-Ea-ayG">
+                    <rect key="frame" x="20" y="9" width="262" height="19"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="bY9-mP-ePe">
+                        <font key="font" metaFont="menu" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="2Kr-ci-t0S" firstAttribute="top" secondItem="NIL-vJ-gNV" secondAttribute="top" id="CGT-vd-vyJ"/>
+                <constraint firstItem="2Kr-ci-t0S" firstAttribute="leading" secondItem="NIL-vJ-gNV" secondAttribute="leading" id="Yw4-Ii-1CX"/>
+                <constraint firstAttribute="trailing" secondItem="2Kr-ci-t0S" secondAttribute="trailing" id="nMc-zc-sGi"/>
+            </constraints>
+            <point key="canvasLocation" x="249" y="941.5"/>
+        </tableCellView>
+        <tableCellView identifier="cell5" id="a4a-vp-3DU" customClass="contactViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="q4A-bs-qVL">
+                    <rect key="frame" x="0.0" y="60" width="600" height="30"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="j8z-Xi-5YI">
+                            <rect key="frame" x="271" y="6" width="58" height="19"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="OTHER" id="8u4-72-2cY">
+                                <font key="font" metaFont="systemMedium" size="16"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="j8z-Xi-5YI" firstAttribute="centerY" secondItem="q4A-bs-qVL" secondAttribute="centerY" id="Ju5-gf-bye"/>
+                        <constraint firstAttribute="height" constant="30" id="OSK-XB-FZx"/>
+                        <constraint firstItem="j8z-Xi-5YI" firstAttribute="centerX" secondItem="q4A-bs-qVL" secondAttribute="centerX" id="kkz-tb-l3Q"/>
+                    </constraints>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oi7-U0-S3Z">
+                    <rect key="frame" x="18" y="35" width="68" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="ID / Status" id="w0a-Lr-9ut">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0yj-9X-5DK">
+                    <rect key="frame" x="360" y="11" width="275" height="19"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="c9n-l6-MpM">
+                        <font key="font" metaFont="menu" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ubl-a7-ZOp">
+                    <rect key="frame" x="18" y="11" width="252" height="19"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="Wce-t6-oi8">
+                        <font key="font" metaFont="menu" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uAu-cj-mTU">
+                    <rect key="frame" x="360" y="35" width="75" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Last results" id="Tue-hn-v72">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="q4A-bs-qVL" firstAttribute="top" secondItem="a4a-vp-3DU" secondAttribute="top" id="C8W-9g-Ua9"/>
+                <constraint firstItem="q4A-bs-qVL" firstAttribute="leading" secondItem="a4a-vp-3DU" secondAttribute="leading" id="O5N-s4-ihW"/>
+                <constraint firstAttribute="trailing" secondItem="q4A-bs-qVL" secondAttribute="trailing" id="jU0-x4-t2e"/>
+            </constraints>
+            <point key="canvasLocation" x="249" y="1211"/>
+        </tableCellView>
+    </objects>
+    <resources>
+        <image name="CONTACTS" width="64" height="64"/>
+    </resources>
+</document>

@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TaskDetailViewController">
+            <connections>
+                <outlet property="dateTime" destination="qY2-wg-j0u" id="G44-oG-UqN"/>
+                <outlet property="regardingText" destination="bmN-2t-D5T" id="nGd-sQ-7IG"/>
+                <outlet property="typeIcon" destination="ite-kB-6bf" id="qD1-Qj-mmF"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <tableCellView identifier="taskcell1" id="aq2-LI-ZHq" customClass="TaskViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="Ccn-rL-SQL">
+                    <rect key="frame" x="0.0" y="20" width="600" height="100"/>
+                    <subviews>
+                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="81G-ke-bxu">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                            <subviews>
+                                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ite-kB-6bf">
+                                    <rect key="frame" x="20" y="20" width="60" height="60"/>
+                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="activity-meeting" id="0Wl-Iu-WXz"/>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="57Z-uc-CKr"/>
+                                <constraint firstAttribute="width" constant="100" id="8XA-kW-Dby"/>
+                                <constraint firstItem="ite-kB-6bf" firstAttribute="top" secondItem="81G-ke-bxu" secondAttribute="top" constant="20" id="IP1-4M-ZGA"/>
+                                <constraint firstAttribute="bottom" secondItem="ite-kB-6bf" secondAttribute="bottom" constant="20" id="JmX-3d-EKK"/>
+                                <constraint firstAttribute="trailing" secondItem="ite-kB-6bf" secondAttribute="trailing" constant="20" id="Mg4-ga-M0d"/>
+                                <constraint firstItem="ite-kB-6bf" firstAttribute="leading" secondItem="81G-ke-bxu" secondAttribute="leading" constant="20" id="wCX-A4-wPb"/>
+                            </constraints>
+                        </customView>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bmN-2t-D5T">
+                            <rect key="frame" x="126" y="59" width="317" height="23"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Lunch Meeting" id="hVY-c1-ixR">
+                                <font key="font" metaFont="systemSemibold" size="19"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qY2-wg-j0u">
+                            <rect key="frame" x="126" y="41" width="325" height="17"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="May 13, 2019 - 1.00 PM (2 hours)" id="HT7-Ij-IuG">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="he6-fr-heQ">
+                            <rect key="frame" x="154" y="16" width="297" height="17"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="1 hour" id="YF0-qq-MuM">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aaZ-gy-pZ5">
+                            <rect key="frame" x="128" y="15" width="20" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="hhc-icons-windows_alerts" id="zld-DI-qiY"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="81G-ke-bxu" firstAttribute="top" secondItem="Ccn-rL-SQL" secondAttribute="top" id="ln3-Sg-mda"/>
+                        <constraint firstItem="81G-ke-bxu" firstAttribute="leading" secondItem="Ccn-rL-SQL" secondAttribute="leading" id="up9-5m-MOw"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Ccn-rL-SQL" firstAttribute="top" secondItem="aq2-LI-ZHq" secondAttribute="top" id="N6E-wM-fGm"/>
+                <constraint firstItem="Ccn-rL-SQL" firstAttribute="leading" secondItem="aq2-LI-ZHq" secondAttribute="leading" id="RKj-wG-SeL"/>
+                <constraint firstAttribute="bottom" secondItem="Ccn-rL-SQL" secondAttribute="bottom" constant="20" id="T6h-it-3mR"/>
+                <constraint firstAttribute="trailing" secondItem="Ccn-rL-SQL" secondAttribute="trailing" id="TRW-Q0-fRE"/>
+            </constraints>
+            <connections>
+                <outlet property="detailsHeader" destination="ylJ-SC-RnS" id="pKB-L1-mGR"/>
+                <outlet property="firstcellBackgrond" destination="Ccn-rL-SQL" id="8uH-VK-0gR"/>
+                <outlet property="headerBackground" destination="ylJ-SC-RnS" id="yDU-Yh-lqE"/>
+                <outlet property="imageBackground" destination="81G-ke-bxu" id="fo4-Eu-PYK"/>
+                <outlet property="locationHeaderView" destination="jVn-CR-kPa" id="fdL-NZ-6Fy"/>
+                <outlet property="otherHeader" destination="bQ6-Xc-Fqc" id="8uX-3k-UHZ"/>
+                <outlet property="recurrenceHeader" destination="U3Y-CL-Vvv" id="P5V-ML-fwv"/>
+                <outlet property="scheduleWithheader" destination="2cP-vn-Cca" id="dea-qg-QPc"/>
+            </connections>
+            <point key="canvasLocation" x="103" y="-193"/>
+        </tableCellView>
+        <tableCellView identifier="taskcell2" id="ztu-cd-02M" customClass="TaskViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="82"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="jVn-CR-kPa">
+                    <rect key="frame" x="0.0" y="52" width="600" height="30"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Vy6-8p-ldK">
+                            <rect key="frame" x="258" y="6" width="84" height="19"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="LOCATION" id="H79-an-xbo">
+                                <font key="font" metaFont="systemMedium" size="16"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="BHo-v3-zgq"/>
+                        <constraint firstItem="Vy6-8p-ldK" firstAttribute="centerX" secondItem="jVn-CR-kPa" secondAttribute="centerX" id="F7D-Qy-b5W"/>
+                        <constraint firstItem="Vy6-8p-ldK" firstAttribute="centerY" secondItem="jVn-CR-kPa" secondAttribute="centerY" id="OgC-oq-5Zq"/>
+                    </constraints>
+                </customView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DN9-wS-ji5">
+                    <rect key="frame" x="9" y="16" width="25" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="icons-contacts_address" id="fvS-w7-jzM"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MC9-Ug-c2u">
+                    <rect key="frame" x="47" y="15" width="405" height="23"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="500 Gordon Baker rd, Toronto, ON, M2H 3B4" id="NyN-qZ-H7O">
+                        <font key="font" metaFont="system" size="16"/>
+                        <color key="textColor" red="0.98039215686274506" green="0.31764705882352939" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="jVn-CR-kPa" firstAttribute="top" secondItem="ztu-cd-02M" secondAttribute="top" id="Dn5-Xg-KM6"/>
+                <constraint firstAttribute="trailing" secondItem="jVn-CR-kPa" secondAttribute="trailing" id="NDY-1J-Y3v"/>
+                <constraint firstItem="jVn-CR-kPa" firstAttribute="leading" secondItem="ztu-cd-02M" secondAttribute="leading" id="tOd-xe-ztg"/>
+            </constraints>
+            <point key="canvasLocation" x="103" y="14"/>
+        </tableCellView>
+        <tableCellView identifier="taskcell3" id="Vmn-4L-Q2V" customClass="TaskViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="91"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D3T-ZQ-HNL">
+                    <rect key="frame" x="47" y="18" width="173" height="23"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Charlie Allnut" id="OD8-7s-B0c">
+                        <font key="font" metaFont="system" size="16"/>
+                        <color key="textColor" red="0.98039215686274506" green="0.31764705882352939" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T4K-kF-QK9">
+                    <rect key="frame" x="383" y="18" width="196" height="23"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Chris Huffman" id="HoI-yW-iys">
+                        <font key="font" metaFont="system" size="16"/>
+                        <color key="textColor" red="0.98039215686274506" green="0.31764705882352939" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oA0-0e-VZl">
+                    <rect key="frame" x="11" y="16" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="hhc-icons-ios_contacts-72" id="hgr-IV-qnx"/>
+                </imageView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="2cP-vn-Cca">
+                    <rect key="frame" x="0.0" y="61" width="600" height="30"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hS8-ge-7mf">
+                            <rect key="frame" x="233" y="6" width="134" height="19"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="SCHEDULE WITH" id="K9a-0a-gVI">
+                                <font key="font" metaFont="systemMedium" size="16"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="hS8-ge-7mf" firstAttribute="centerX" secondItem="2cP-vn-Cca" secondAttribute="centerX" id="Dml-n4-qgi"/>
+                        <constraint firstItem="hS8-ge-7mf" firstAttribute="centerY" secondItem="2cP-vn-Cca" secondAttribute="centerY" id="lCQ-tK-5vS"/>
+                        <constraint firstAttribute="height" constant="30" id="ynK-R7-V0h"/>
+                    </constraints>
+                </customView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7oq-dr-Z8O">
+                    <rect key="frame" x="347" y="16" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="hhc-icons-ios_contacts-72" id="Nr8-lO-W8Y"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="2cP-vn-Cca" firstAttribute="leading" secondItem="Vmn-4L-Q2V" secondAttribute="leading" id="DDK-2J-WPp"/>
+                <constraint firstItem="2cP-vn-Cca" firstAttribute="top" secondItem="Vmn-4L-Q2V" secondAttribute="top" id="JKb-OM-5Op"/>
+                <constraint firstAttribute="trailing" secondItem="2cP-vn-Cca" secondAttribute="trailing" id="V63-A9-8jE"/>
+            </constraints>
+            <point key="canvasLocation" x="103" y="171.5"/>
+        </tableCellView>
+        <tableCellView identifier="taskcell4" id="QFg-Y6-cro" customClass="TaskViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="125"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="U3Y-CL-Vvv">
+                    <rect key="frame" x="0.0" y="95" width="600" height="30"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hna-Ir-ffF">
+                            <rect key="frame" x="245" y="6" width="110" height="19"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="RECURRENCE" id="2VE-xN-1Pf">
+                                <font key="font" metaFont="systemMedium" size="16"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="hna-Ir-ffF" firstAttribute="centerX" secondItem="U3Y-CL-Vvv" secondAttribute="centerX" id="GWB-yi-b2V"/>
+                        <constraint firstItem="hna-Ir-ffF" firstAttribute="centerY" secondItem="U3Y-CL-Vvv" secondAttribute="centerY" id="JC3-dS-GHO"/>
+                        <constraint firstAttribute="height" constant="30" id="TY7-HN-UbU"/>
+                    </constraints>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QO5-XL-shx">
+                    <rect key="frame" x="17" y="50" width="48" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Occurs" id="FRQ-1G-N5p">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VAG-4M-DXS">
+                    <rect key="frame" x="340" y="50" width="256" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Start time" id="MaO-PH-yek">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L87-ib-NFA">
+                    <rect key="frame" x="17" y="27" width="210" height="22"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Weekly" id="gTJ-Cp-gVz">
+                        <font key="font" metaFont="system" size="16"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dMs-vm-wLT">
+                    <rect key="frame" x="341" y="26" width="258" height="22"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="May 6,2019 - 1.00 PM" id="ml5-3L-vCl">
+                        <font key="font" metaFont="system" size="16"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xdr-pS-oeZ">
+                    <rect key="frame" x="17" y="11" width="210" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="(on Mon untill Septemner 24,2019)" id="tSE-UK-cH3">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="U3Y-CL-Vvv" firstAttribute="top" secondItem="QFg-Y6-cro" secondAttribute="top" id="PxY-cq-W5e"/>
+                <constraint firstItem="U3Y-CL-Vvv" firstAttribute="leading" secondItem="QFg-Y6-cro" secondAttribute="leading" id="Si6-Vx-gVa"/>
+                <constraint firstAttribute="trailing" secondItem="U3Y-CL-Vvv" secondAttribute="trailing" id="eTK-iW-mmQ"/>
+            </constraints>
+            <point key="canvasLocation" x="103" y="347.5"/>
+        </tableCellView>
+        <tableCellView identifier="taskcell5" id="Gk4-1Q-acb" customClass="TaskViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="156"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="bQ6-Xc-Fqc">
+                    <rect key="frame" x="0.0" y="126" width="600" height="30"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QI3-Rp-P5g">
+                            <rect key="frame" x="269" y="6" width="62" height="19"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="OTHER" id="Ue6-dx-NpU">
+                                <font key="font" metaFont="systemMedium" size="16"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="QI3-Rp-P5g" firstAttribute="centerY" secondItem="bQ6-Xc-Fqc" secondAttribute="centerY" id="6gA-fs-F2h"/>
+                        <constraint firstAttribute="height" constant="30" id="NgR-s5-Acg"/>
+                        <constraint firstItem="QI3-Rp-P5g" firstAttribute="centerX" secondItem="bQ6-Xc-Fqc" secondAttribute="centerX" id="bGb-Ya-IHf"/>
+                    </constraints>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pIc-kQ-hLH">
+                    <rect key="frame" x="17" y="78" width="46" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Private" id="cbs-KC-GTH">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sed-Ye-fa8">
+                    <rect key="frame" x="17" y="57" width="34" height="19"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="YES" id="cMd-5k-1RB">
+                        <font key="font" metaFont="system" size="16"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tqf-6z-jzV">
+                    <rect key="frame" x="17" y="7" width="34" height="19"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Low" id="tav-Lu-DrC">
+                        <font key="font" metaFont="system" size="16"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B01-OG-K2U">
+                    <rect key="frame" x="346" y="78" width="243" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Scheduled for" id="1Hv-nk-vaZ">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SWv-zx-kIm">
+                    <rect key="frame" x="346" y="28" width="241" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Scheduled by" id="k57-NP-EX8">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wNd-ue-E3g">
+                    <rect key="frame" x="346" y="57" width="243" height="19"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Chris Huffman" id="4R0-PA-6Bi">
+                        <font key="font" metaFont="system" size="16"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4S8-mK-noR">
+                    <rect key="frame" x="345" y="7" width="242" height="19"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Chris Huffman" id="ieB-VL-Arw">
+                        <font key="font" metaFont="system" size="16"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="okj-at-pHh">
+                    <rect key="frame" x="17" y="27" width="48" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Priority" id="VSw-7I-K1A">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="bQ6-Xc-Fqc" firstAttribute="leading" secondItem="Gk4-1Q-acb" secondAttribute="leading" id="Wlf-ps-pU1"/>
+                <constraint firstItem="bQ6-Xc-Fqc" firstAttribute="top" secondItem="Gk4-1Q-acb" secondAttribute="top" id="doR-oZ-1ex"/>
+                <constraint firstAttribute="trailing" secondItem="bQ6-Xc-Fqc" secondAttribute="trailing" id="jc3-f9-cCe"/>
+            </constraints>
+            <point key="canvasLocation" x="103" y="578"/>
+        </tableCellView>
+        <tableCellView identifier="taskcell6" id="J36-wE-TWA" customClass="TaskViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="102"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="ylJ-SC-RnS">
+                    <rect key="frame" x="0.0" y="72" width="600" height="30"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xNX-bd-p5t">
+                            <rect key="frame" x="266" y="6" width="68" height="19"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="DETAILS" id="GPF-gY-dxJ">
+                                <font key="font" metaFont="systemMedium" size="16"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="xNX-bd-p5t" firstAttribute="centerY" secondItem="ylJ-SC-RnS" secondAttribute="centerY" id="Ehh-4I-uea"/>
+                        <constraint firstItem="xNX-bd-p5t" firstAttribute="centerX" secondItem="ylJ-SC-RnS" secondAttribute="centerX" id="Kdu-st-fAC"/>
+                        <constraint firstAttribute="height" constant="30" id="rqq-SW-imq"/>
+                    </constraints>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EhF-oL-y8E">
+                    <rect key="frame" x="17" y="30" width="545" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Dicussion on new bussiness opportunities" id="Zsn-TF-J7j">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="ylJ-SC-RnS" firstAttribute="leading" secondItem="J36-wE-TWA" secondAttribute="leading" id="A4G-sQ-2ff"/>
+                <constraint firstAttribute="trailing" secondItem="ylJ-SC-RnS" secondAttribute="trailing" id="ToF-vv-Jfa"/>
+                <constraint firstItem="ylJ-SC-RnS" firstAttribute="top" secondItem="J36-wE-TWA" secondAttribute="top" id="pms-k6-dvD"/>
+            </constraints>
+            <point key="canvasLocation" x="103" y="772"/>
+        </tableCellView>
+    </objects>
+    <resources>
+        <image name="activity-meeting" width="50" height="50"/>
+        <image name="hhc-icons-ios_contacts-72" width="25" height="25"/>
+        <image name="hhc-icons-windows_alerts" width="30" height="30"/>
+        <image name="icons-contacts_address" width="99" height="117"/>
+    </resources>
+</document>

@@ -1,0 +1,983 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24A1A1BAF65EEECB56ED3286 /* Pods_HHC_For_MacUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44AC3861EF46EDCE2E0F781C /* Pods_HHC_For_MacUITests.framework */; };
+		28EDA3BD37E126266F91E472 /* Pods_HHC_For_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C89CB3625E0BF73D8A450E /* Pods_HHC_For_Mac.framework */; };
+		35C228E35CD05141D3F7C565 /* Pods_HHC_For_MacTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF46CF4658E34D12ACA90E4 /* Pods_HHC_For_MacTests.framework */; };
+		F101BFEA230F47F500F0FC62 /* SidebarTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = F101BFE9230F47F500F0FC62 /* SidebarTableCellView.m */; };
+		F101BFED230F4BD700F0FC62 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F101BFEC230F4BD700F0FC62 /* ViewController.m */; };
+		F101BFF0230F4F7C00F0FC62 /* ContentView1.xib in Resources */ = {isa = PBXBuildFile; fileRef = F101BFEF230F4F7C00F0FC62 /* ContentView1.xib */; };
+		F101BFF2230F4F8600F0FC62 /* ContentView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = F101BFF1230F4F8600F0FC62 /* ContentView2.xib */; };
+		F101BFF4230F4F8E00F0FC62 /* ContentView3.xib in Resources */ = {isa = PBXBuildFile; fileRef = F101BFF3230F4F8E00F0FC62 /* ContentView3.xib */; };
+		F101BFF7230F500400F0FC62 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F101BFF6230F500400F0FC62 /* Cocoa.framework */; };
+		F10538C42326D28C0068FA9E /* menuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F10538C32326D28C0068FA9E /* menuItemCell.m */; };
+		F10538C62326D2A80068FA9E /* menuItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F10538C52326D2A80068FA9E /* menuItemCell.xib */; };
+		F1325CDC23079E0F00C857ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1325CDB23079E0F00C857ED /* AppDelegate.m */; };
+		F1325CDE23079E1000C857ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1325CDD23079E1000C857ED /* Assets.xcassets */; };
+		F1325CE123079E1100C857ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1325CDF23079E1100C857ED /* Main.storyboard */; };
+		F1325CE423079E1100C857ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1325CE323079E1100C857ED /* main.m */; };
+		F1325CEF23079E1100C857ED /* HHC_For_MacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1325CEE23079E1100C857ED /* HHC_For_MacTests.m */; };
+		F1325CFA23079E1100C857ED /* HHC_For_MacUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1325CF923079E1100C857ED /* HHC_For_MacUITests.m */; };
+		F1368633231B0C4400A59DC7 /* TaskListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1368631231B0C4400A59DC7 /* TaskListViewController.m */; };
+		F1368634231B0C4400A59DC7 /* TaskListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1368632231B0C4400A59DC7 /* TaskListViewController.xib */; };
+		F1368637231D97AC00A59DC7 /* ContactListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1368636231D97AC00A59DC7 /* ContactListCell.m */; };
+		F1368639231D97D700A59DC7 /* ContactListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1368638231D97D700A59DC7 /* ContactListCell.xib */; };
+		F149DD082310DF5A0058F641 /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F149DD072310DF5A0058F641 /* ContactsUI.framework */; };
+		F1C719102314AB360026F774 /* PXSourceListTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C718FE2314AB360026F774 /* PXSourceListTableCellView.m */; };
+		F1C719112314AB360026F774 /* PXSourceList.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C719002314AB360026F774 /* PXSourceList.m */; };
+		F1C719122314AB360026F774 /* PXSourceListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C719012314AB360026F774 /* PXSourceListItem.m */; };
+		F1C719132314AB360026F774 /* PXSourceListBadgeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C719022314AB360026F774 /* PXSourceListBadgeCell.m */; };
+		F1C719142314AB360026F774 /* PXSourceListRuntimeAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C719042314AB360026F774 /* PXSourceListRuntimeAdditions.m */; };
+		F1C719152314AB360026F774 /* PXSourceListDelegateDataSourceProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C719082314AB360026F774 /* PXSourceListDelegateDataSourceProxy.m */; };
+		F1C719162314AB360026F774 /* PXSourceListBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C719092314AB360026F774 /* PXSourceListBadgeView.m */; };
+		F1C7191A2314ADC30026F774 /* ContactDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C719182314ADC30026F774 /* ContactDetailView.m */; };
+		F1C7191B2314ADC30026F774 /* ContactDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1C719192314ADC30026F774 /* ContactDetailView.xib */; };
+		F1C71B0023158A710026F774 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C71AFF23158A710026F774 /* Realm.framework */; };
+		F1C71B0223158F880026F774 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C71AFF23158A710026F774 /* Realm.framework */; };
+		F1F2BFA4231EF26E00A19D94 /* HHCContactListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F2BFA2231EF26E00A19D94 /* HHCContactListViewController.m */; };
+		F1F2BFA5231EF26E00A19D94 /* HHCContactListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1F2BFA3231EF26E00A19D94 /* HHCContactListViewController.xib */; };
+		F1F2BFAA2320119D00A19D94 /* RealmContact.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F2BFA92320119D00A19D94 /* RealmContact.m */; };
+		F1F2BFAD2320381A00A19D94 /* contactViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F2BFAC2320381A00A19D94 /* contactViewCell.m */; };
+		F1F2BFAF2320382B00A19D94 /* contactViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1F2BFAE2320382B00A19D94 /* contactViewCell.xib */; };
+		F1F2BFB323204B9400A19D94 /* RealmActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F2BFB223204B9400A19D94 /* RealmActivity.m */; };
+		F1F2BFB623204BA200A19D94 /* RLMActivityWithContact.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F2BFB523204BA200A19D94 /* RLMActivityWithContact.m */; };
+		F1F2BFB923204BAF00A19D94 /* RLMActivityException.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F2BFB823204BAF00A19D94 /* RLMActivityException.m */; };
+		F1F2BFBC23204BB900A19D94 /* RLMActivityWithCompany.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F2BFBB23204BB900A19D94 /* RLMActivityWithCompany.m */; };
+		F1F2BFBF23204BC400A19D94 /* RLMActivityWithGroups.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F2BFBE23204BC300A19D94 /* RLMActivityWithGroups.m */; };
+		F1F2BFC22321474000A19D94 /* TaskListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F2BFC12321474000A19D94 /* TaskListCell.m */; };
+		F1F2BFC42321475700A19D94 /* TaskListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1F2BFC32321475700A19D94 /* TaskListCell.xib */; };
+		F1F2BFC823214C4800A19D94 /* TaskDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F2BFC623214C4800A19D94 /* TaskDetailViewController.m */; };
+		F1F2BFC923214C4800A19D94 /* TaskDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1F2BFC723214C4800A19D94 /* TaskDetailViewController.xib */; };
+		F1F2BFCC2322C44C00A19D94 /* TaskViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F2BFCB2322C44C00A19D94 /* TaskViewCell.m */; };
+		F1F2BFCE2322C45E00A19D94 /* TaskViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1F2BFCD2322C45E00A19D94 /* TaskViewCell.xib */; };
+		F1F2BFD12322EB4A00A19D94 /* tableRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F2BFD02322EB4A00A19D94 /* tableRowView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1325CEB23079E1100C857ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1325CCF23079E0F00C857ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1325CD623079E0F00C857ED;
+			remoteInfo = "HHC For Mac";
+		};
+		F1325CF623079E1100C857ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1325CCF23079E0F00C857ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1325CD623079E0F00C857ED;
+			remoteInfo = "HHC For Mac";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F1C71B0423158F890026F774 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		11C89CB3625E0BF73D8A450E /* Pods_HHC_For_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHC_For_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2268BFB7AB2C9E5BD61CCD60 /* Pods-HHC For MacUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHC For MacUITests.release.xcconfig"; path = "Target Support Files/Pods-HHC For MacUITests/Pods-HHC For MacUITests.release.xcconfig"; sourceTree = "<group>"; };
+		44AC3861EF46EDCE2E0F781C /* Pods_HHC_For_MacUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHC_For_MacUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F163EE72BA2770E02C8C87C /* Pods-HHC For MacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHC For MacTests.debug.xcconfig"; path = "Target Support Files/Pods-HHC For MacTests/Pods-HHC For MacTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5BF46CF4658E34D12ACA90E4 /* Pods_HHC_For_MacTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHC_For_MacTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8C7C8E429CBDCEF95B7BFB4 /* Pods-HHC For MacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHC For MacTests.release.xcconfig"; path = "Target Support Files/Pods-HHC For MacTests/Pods-HHC For MacTests.release.xcconfig"; sourceTree = "<group>"; };
+		D1AA089C0302CC8D1086F15C /* Pods-HHC For Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHC For Mac.release.xcconfig"; path = "Target Support Files/Pods-HHC For Mac/Pods-HHC For Mac.release.xcconfig"; sourceTree = "<group>"; };
+		D4A8EC516899EF5920FE9866 /* Pods-HHC For MacUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHC For MacUITests.debug.xcconfig"; path = "Target Support Files/Pods-HHC For MacUITests/Pods-HHC For MacUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F101BFE8230F47EF00F0FC62 /* SidebarTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidebarTableCellView.h; sourceTree = "<group>"; };
+		F101BFE9230F47F500F0FC62 /* SidebarTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidebarTableCellView.m; sourceTree = "<group>"; };
+		F101BFEB230F4BD700F0FC62 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F101BFEC230F4BD700F0FC62 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F101BFEF230F4F7C00F0FC62 /* ContentView1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentView1.xib; sourceTree = "<group>"; };
+		F101BFF1230F4F8600F0FC62 /* ContentView2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentView2.xib; sourceTree = "<group>"; };
+		F101BFF3230F4F8E00F0FC62 /* ContentView3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentView3.xib; sourceTree = "<group>"; };
+		F101BFF6230F500400F0FC62 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F101BFF8230F501500F0FC62 /* SidebarDemo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidebarDemo_Prefix.pch; sourceTree = "<group>"; };
+		F10538C22326D28C0068FA9E /* menuItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = menuItemCell.h; sourceTree = "<group>"; };
+		F10538C32326D28C0068FA9E /* menuItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = menuItemCell.m; sourceTree = "<group>"; };
+		F10538C52326D2A80068FA9E /* menuItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = menuItemCell.xib; sourceTree = "<group>"; };
+		F1325CD723079E0F00C857ED /* HHC For Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HHC For Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1325CDA23079E0F00C857ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F1325CDB23079E0F00C857ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F1325CDD23079E1000C857ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1325CE023079E1100C857ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1325CE223079E1100C857ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1325CE323079E1100C857ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F1325CE523079E1100C857ED /* HHC_For_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HHC_For_Mac.entitlements; sourceTree = "<group>"; };
+		F1325CEA23079E1100C857ED /* HHC For MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HHC For MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1325CEE23079E1100C857ED /* HHC_For_MacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHC_For_MacTests.m; sourceTree = "<group>"; };
+		F1325CF023079E1100C857ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1325CF523079E1100C857ED /* HHC For MacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HHC For MacUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1325CF923079E1100C857ED /* HHC_For_MacUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHC_For_MacUITests.m; sourceTree = "<group>"; };
+		F1325CFB23079E1100C857ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1368630231B0C4400A59DC7 /* TaskListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskListViewController.h; sourceTree = "<group>"; };
+		F1368631231B0C4400A59DC7 /* TaskListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskListViewController.m; sourceTree = "<group>"; };
+		F1368632231B0C4400A59DC7 /* TaskListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskListViewController.xib; sourceTree = "<group>"; };
+		F1368635231D97AC00A59DC7 /* ContactListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactListCell.h; sourceTree = "<group>"; };
+		F1368636231D97AC00A59DC7 /* ContactListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactListCell.m; sourceTree = "<group>"; };
+		F1368638231D97D700A59DC7 /* ContactListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactListCell.xib; sourceTree = "<group>"; };
+		F149DD0623106EFC0058F641 /* globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = globals.h; sourceTree = "<group>"; };
+		F149DD072310DF5A0058F641 /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
+		F1C718FE2314AB360026F774 /* PXSourceListTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXSourceListTableCellView.m; sourceTree = "<group>"; };
+		F1C718FF2314AB360026F774 /* PXSourceListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXSourceListDelegate.h; sourceTree = "<group>"; };
+		F1C719002314AB360026F774 /* PXSourceList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXSourceList.m; sourceTree = "<group>"; };
+		F1C719012314AB360026F774 /* PXSourceListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXSourceListItem.m; sourceTree = "<group>"; };
+		F1C719022314AB360026F774 /* PXSourceListBadgeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXSourceListBadgeCell.m; sourceTree = "<group>"; };
+		F1C719042314AB360026F774 /* PXSourceListRuntimeAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXSourceListRuntimeAdditions.m; sourceTree = "<group>"; };
+		F1C719052314AB360026F774 /* PXSourceListDelegateDataSourceProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXSourceListDelegateDataSourceProxy.h; sourceTree = "<group>"; };
+		F1C719062314AB360026F774 /* PXSourceListRuntimeAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXSourceListRuntimeAdditions.h; sourceTree = "<group>"; };
+		F1C719072314AB360026F774 /* PXSourceListPrivateConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXSourceListPrivateConstants.h; sourceTree = "<group>"; };
+		F1C719082314AB360026F774 /* PXSourceListDelegateDataSourceProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXSourceListDelegateDataSourceProxy.m; sourceTree = "<group>"; };
+		F1C719092314AB360026F774 /* PXSourceListBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXSourceListBadgeView.m; sourceTree = "<group>"; };
+		F1C7190A2314AB360026F774 /* PXSourceListTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXSourceListTableCellView.h; sourceTree = "<group>"; };
+		F1C7190B2314AB360026F774 /* PXSourceList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXSourceList.h; sourceTree = "<group>"; };
+		F1C7190C2314AB360026F774 /* PXSourceListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXSourceListDataSource.h; sourceTree = "<group>"; };
+		F1C7190D2314AB360026F774 /* PXSourceListBadgeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXSourceListBadgeCell.h; sourceTree = "<group>"; };
+		F1C7190E2314AB360026F774 /* PXSourceListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXSourceListItem.h; sourceTree = "<group>"; };
+		F1C7190F2314AB360026F774 /* PXSourceListBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXSourceListBadgeView.h; sourceTree = "<group>"; };
+		F1C719172314ADC30026F774 /* ContactDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactDetailView.h; sourceTree = "<group>"; };
+		F1C719182314ADC30026F774 /* ContactDetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactDetailView.m; sourceTree = "<group>"; };
+		F1C719192314ADC30026F774 /* ContactDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactDetailView.xib; sourceTree = "<group>"; };
+		F1C71AFF23158A710026F774 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		F1F2BFA1231EF26E00A19D94 /* HHCContactListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHCContactListViewController.h; sourceTree = "<group>"; };
+		F1F2BFA2231EF26E00A19D94 /* HHCContactListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHCContactListViewController.m; sourceTree = "<group>"; };
+		F1F2BFA3231EF26E00A19D94 /* HHCContactListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HHCContactListViewController.xib; sourceTree = "<group>"; };
+		F1F2BFA82320119500A19D94 /* RealmContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmContact.h; sourceTree = "<group>"; };
+		F1F2BFA92320119D00A19D94 /* RealmContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmContact.m; sourceTree = "<group>"; };
+		F1F2BFAB2320381A00A19D94 /* contactViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = contactViewCell.h; sourceTree = "<group>"; };
+		F1F2BFAC2320381A00A19D94 /* contactViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = contactViewCell.m; sourceTree = "<group>"; };
+		F1F2BFAE2320382B00A19D94 /* contactViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = contactViewCell.xib; sourceTree = "<group>"; };
+		F1F2BFB123204B8F00A19D94 /* RealmActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmActivity.h; sourceTree = "<group>"; };
+		F1F2BFB223204B9400A19D94 /* RealmActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmActivity.m; sourceTree = "<group>"; };
+		F1F2BFB423204B9C00A19D94 /* RLMActivityWithContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMActivityWithContact.h; sourceTree = "<group>"; };
+		F1F2BFB523204BA200A19D94 /* RLMActivityWithContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMActivityWithContact.m; sourceTree = "<group>"; };
+		F1F2BFB723204BA800A19D94 /* RLMActivityException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMActivityException.h; sourceTree = "<group>"; };
+		F1F2BFB823204BAF00A19D94 /* RLMActivityException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMActivityException.m; sourceTree = "<group>"; };
+		F1F2BFBA23204BB400A19D94 /* RLMActivityWithCompany.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMActivityWithCompany.h; sourceTree = "<group>"; };
+		F1F2BFBB23204BB900A19D94 /* RLMActivityWithCompany.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMActivityWithCompany.m; sourceTree = "<group>"; };
+		F1F2BFBD23204BBE00A19D94 /* RLMActivityWithGroups.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMActivityWithGroups.h; sourceTree = "<group>"; };
+		F1F2BFBE23204BC300A19D94 /* RLMActivityWithGroups.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMActivityWithGroups.m; sourceTree = "<group>"; };
+		F1F2BFC02321474000A19D94 /* TaskListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskListCell.h; sourceTree = "<group>"; };
+		F1F2BFC12321474000A19D94 /* TaskListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskListCell.m; sourceTree = "<group>"; };
+		F1F2BFC32321475700A19D94 /* TaskListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskListCell.xib; sourceTree = "<group>"; };
+		F1F2BFC523214C4800A19D94 /* TaskDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskDetailViewController.h; sourceTree = "<group>"; };
+		F1F2BFC623214C4800A19D94 /* TaskDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskDetailViewController.m; sourceTree = "<group>"; };
+		F1F2BFC723214C4800A19D94 /* TaskDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskDetailViewController.xib; sourceTree = "<group>"; };
+		F1F2BFCA2322C44C00A19D94 /* TaskViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskViewCell.h; sourceTree = "<group>"; };
+		F1F2BFCB2322C44C00A19D94 /* TaskViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskViewCell.m; sourceTree = "<group>"; };
+		F1F2BFCD2322C45E00A19D94 /* TaskViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskViewCell.xib; sourceTree = "<group>"; };
+		F1F2BFCF2322EB4A00A19D94 /* tableRowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tableRowView.h; sourceTree = "<group>"; };
+		F1F2BFD02322EB4A00A19D94 /* tableRowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tableRowView.m; sourceTree = "<group>"; };
+		F6907E7E19841716609B3074 /* Pods-HHC For Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHC For Mac.debug.xcconfig"; path = "Target Support Files/Pods-HHC For Mac/Pods-HHC For Mac.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1325CD423079E0F00C857ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1C71B0223158F880026F774 /* Realm.framework in Frameworks */,
+				F1C71B0023158A710026F774 /* Realm.framework in Frameworks */,
+				F101BFF7230F500400F0FC62 /* Cocoa.framework in Frameworks */,
+				F149DD082310DF5A0058F641 /* ContactsUI.framework in Frameworks */,
+				28EDA3BD37E126266F91E472 /* Pods_HHC_For_Mac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1325CE723079E1100C857ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35C228E35CD05141D3F7C565 /* Pods_HHC_For_MacTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1325CF223079E1100C857ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24A1A1BAF65EEECB56ED3286 /* Pods_HHC_For_MacUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		872A39DCD621ACE2F32697BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6907E7E19841716609B3074 /* Pods-HHC For Mac.debug.xcconfig */,
+				D1AA089C0302CC8D1086F15C /* Pods-HHC For Mac.release.xcconfig */,
+				4F163EE72BA2770E02C8C87C /* Pods-HHC For MacTests.debug.xcconfig */,
+				C8C7C8E429CBDCEF95B7BFB4 /* Pods-HHC For MacTests.release.xcconfig */,
+				D4A8EC516899EF5920FE9866 /* Pods-HHC For MacUITests.debug.xcconfig */,
+				2268BFB7AB2C9E5BD61CCD60 /* Pods-HHC For MacUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F101BFEE230F4F6900F0FC62 /* Nib */ = {
+			isa = PBXGroup;
+			children = (
+				F101BFEF230F4F7C00F0FC62 /* ContentView1.xib */,
+				F101BFF1230F4F8600F0FC62 /* ContentView2.xib */,
+				F101BFF3230F4F8E00F0FC62 /* ContentView3.xib */,
+			);
+			path = Nib;
+			sourceTree = "<group>";
+		};
+		F101BFF5230F500400F0FC62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1C71AFF23158A710026F774 /* Realm.framework */,
+				F149DD072310DF5A0058F641 /* ContactsUI.framework */,
+				F101BFF6230F500400F0FC62 /* Cocoa.framework */,
+				11C89CB3625E0BF73D8A450E /* Pods_HHC_For_Mac.framework */,
+				5BF46CF4658E34D12ACA90E4 /* Pods_HHC_For_MacTests.framework */,
+				44AC3861EF46EDCE2E0F781C /* Pods_HHC_For_MacUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1325CCE23079E0F00C857ED = {
+			isa = PBXGroup;
+			children = (
+				F1325CD923079E0F00C857ED /* HHC For Mac */,
+				F1325CED23079E1100C857ED /* HHC For MacTests */,
+				F1325CF823079E1100C857ED /* HHC For MacUITests */,
+				F1325CD823079E0F00C857ED /* Products */,
+				F101BFF5230F500400F0FC62 /* Frameworks */,
+				872A39DCD621ACE2F32697BD /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		F1325CD823079E0F00C857ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1325CD723079E0F00C857ED /* HHC For Mac.app */,
+				F1325CEA23079E1100C857ED /* HHC For MacTests.xctest */,
+				F1325CF523079E1100C857ED /* HHC For MacUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1325CD923079E0F00C857ED /* HHC For Mac */ = {
+			isa = PBXGroup;
+			children = (
+				F101BFF8230F501500F0FC62 /* SidebarDemo_Prefix.pch */,
+				F1325CDA23079E0F00C857ED /* AppDelegate.h */,
+				F1325CDB23079E0F00C857ED /* AppDelegate.m */,
+				F149DD0623106EFC0058F641 /* globals.h */,
+				F101BFE8230F47EF00F0FC62 /* SidebarTableCellView.h */,
+				F101BFE9230F47F500F0FC62 /* SidebarTableCellView.m */,
+				F101BFEB230F4BD700F0FC62 /* ViewController.h */,
+				F101BFEC230F4BD700F0FC62 /* ViewController.m */,
+				F1F2BFA1231EF26E00A19D94 /* HHCContactListViewController.h */,
+				F1F2BFA2231EF26E00A19D94 /* HHCContactListViewController.m */,
+				F1F2BFA3231EF26E00A19D94 /* HHCContactListViewController.xib */,
+				F1368635231D97AC00A59DC7 /* ContactListCell.h */,
+				F1368636231D97AC00A59DC7 /* ContactListCell.m */,
+				F1368638231D97D700A59DC7 /* ContactListCell.xib */,
+				F1F2BFAB2320381A00A19D94 /* contactViewCell.h */,
+				F1F2BFAC2320381A00A19D94 /* contactViewCell.m */,
+				F1F2BFAE2320382B00A19D94 /* contactViewCell.xib */,
+				F1F2BFC02321474000A19D94 /* TaskListCell.h */,
+				F1F2BFC12321474000A19D94 /* TaskListCell.m */,
+				F1F2BFC32321475700A19D94 /* TaskListCell.xib */,
+				F10538C22326D28C0068FA9E /* menuItemCell.h */,
+				F10538C32326D28C0068FA9E /* menuItemCell.m */,
+				F10538C52326D2A80068FA9E /* menuItemCell.xib */,
+				F1C719172314ADC30026F774 /* ContactDetailView.h */,
+				F1C719182314ADC30026F774 /* ContactDetailView.m */,
+				F1C719192314ADC30026F774 /* ContactDetailView.xib */,
+				F1368630231B0C4400A59DC7 /* TaskListViewController.h */,
+				F1368631231B0C4400A59DC7 /* TaskListViewController.m */,
+				F1368632231B0C4400A59DC7 /* TaskListViewController.xib */,
+				F1F2BFC523214C4800A19D94 /* TaskDetailViewController.h */,
+				F1F2BFC623214C4800A19D94 /* TaskDetailViewController.m */,
+				F1F2BFC723214C4800A19D94 /* TaskDetailViewController.xib */,
+				F1F2BFCA2322C44C00A19D94 /* TaskViewCell.h */,
+				F1F2BFCB2322C44C00A19D94 /* TaskViewCell.m */,
+				F1F2BFCD2322C45E00A19D94 /* TaskViewCell.xib */,
+				F1F2BFCF2322EB4A00A19D94 /* tableRowView.h */,
+				F1F2BFD02322EB4A00A19D94 /* tableRowView.m */,
+				F1325CDD23079E1000C857ED /* Assets.xcassets */,
+				F1325CDF23079E1100C857ED /* Main.storyboard */,
+				F1325CE223079E1100C857ED /* Info.plist */,
+				F1325CE323079E1100C857ED /* main.m */,
+				F1325CE523079E1100C857ED /* HHC_For_Mac.entitlements */,
+				F1F2BFB023204B6200A19D94 /* Realm */,
+				F1C718FD2314AB360026F774 /* PXSourceList */,
+				F101BFEE230F4F6900F0FC62 /* Nib */,
+			);
+			path = "HHC For Mac";
+			sourceTree = "<group>";
+		};
+		F1325CED23079E1100C857ED /* HHC For MacTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1325CEE23079E1100C857ED /* HHC_For_MacTests.m */,
+				F1325CF023079E1100C857ED /* Info.plist */,
+			);
+			path = "HHC For MacTests";
+			sourceTree = "<group>";
+		};
+		F1325CF823079E1100C857ED /* HHC For MacUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F1325CF923079E1100C857ED /* HHC_For_MacUITests.m */,
+				F1325CFB23079E1100C857ED /* Info.plist */,
+			);
+			path = "HHC For MacUITests";
+			sourceTree = "<group>";
+		};
+		F1C718FD2314AB360026F774 /* PXSourceList */ = {
+			isa = PBXGroup;
+			children = (
+				F1C718FE2314AB360026F774 /* PXSourceListTableCellView.m */,
+				F1C718FF2314AB360026F774 /* PXSourceListDelegate.h */,
+				F1C719002314AB360026F774 /* PXSourceList.m */,
+				F1C719012314AB360026F774 /* PXSourceListItem.m */,
+				F1C719022314AB360026F774 /* PXSourceListBadgeCell.m */,
+				F1C719032314AB360026F774 /* Internal */,
+				F1C719092314AB360026F774 /* PXSourceListBadgeView.m */,
+				F1C7190A2314AB360026F774 /* PXSourceListTableCellView.h */,
+				F1C7190B2314AB360026F774 /* PXSourceList.h */,
+				F1C7190C2314AB360026F774 /* PXSourceListDataSource.h */,
+				F1C7190D2314AB360026F774 /* PXSourceListBadgeCell.h */,
+				F1C7190E2314AB360026F774 /* PXSourceListItem.h */,
+				F1C7190F2314AB360026F774 /* PXSourceListBadgeView.h */,
+			);
+			path = PXSourceList;
+			sourceTree = "<group>";
+		};
+		F1C719032314AB360026F774 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				F1C719042314AB360026F774 /* PXSourceListRuntimeAdditions.m */,
+				F1C719052314AB360026F774 /* PXSourceListDelegateDataSourceProxy.h */,
+				F1C719062314AB360026F774 /* PXSourceListRuntimeAdditions.h */,
+				F1C719072314AB360026F774 /* PXSourceListPrivateConstants.h */,
+				F1C719082314AB360026F774 /* PXSourceListDelegateDataSourceProxy.m */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		F1F2BFB023204B6200A19D94 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				F1F2BFA82320119500A19D94 /* RealmContact.h */,
+				F1F2BFA92320119D00A19D94 /* RealmContact.m */,
+				F1F2BFB123204B8F00A19D94 /* RealmActivity.h */,
+				F1F2BFB223204B9400A19D94 /* RealmActivity.m */,
+				F1F2BFB423204B9C00A19D94 /* RLMActivityWithContact.h */,
+				F1F2BFB523204BA200A19D94 /* RLMActivityWithContact.m */,
+				F1F2BFB723204BA800A19D94 /* RLMActivityException.h */,
+				F1F2BFB823204BAF00A19D94 /* RLMActivityException.m */,
+				F1F2BFBA23204BB400A19D94 /* RLMActivityWithCompany.h */,
+				F1F2BFBB23204BB900A19D94 /* RLMActivityWithCompany.m */,
+				F1F2BFBD23204BBE00A19D94 /* RLMActivityWithGroups.h */,
+				F1F2BFBE23204BC300A19D94 /* RLMActivityWithGroups.m */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1325CD623079E0F00C857ED /* HHC For Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1325CFE23079E1100C857ED /* Build configuration list for PBXNativeTarget "HHC For Mac" */;
+			buildPhases = (
+				19EC4142BEAD8B89376703C9 /* [CP] Check Pods Manifest.lock */,
+				F1325CD323079E0F00C857ED /* Sources */,
+				F1325CD423079E0F00C857ED /* Frameworks */,
+				F1325CD523079E0F00C857ED /* Resources */,
+				F1C71B0423158F890026F774 /* Embed Frameworks */,
+				196E805898EF01BA7C410BD5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HHC For Mac";
+			productName = "HHC For Mac";
+			productReference = F1325CD723079E0F00C857ED /* HHC For Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1325CE923079E1100C857ED /* HHC For MacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1325D0123079E1100C857ED /* Build configuration list for PBXNativeTarget "HHC For MacTests" */;
+			buildPhases = (
+				DBF47815DC91922BF52317A2 /* [CP] Check Pods Manifest.lock */,
+				F1325CE623079E1100C857ED /* Sources */,
+				F1325CE723079E1100C857ED /* Frameworks */,
+				F1325CE823079E1100C857ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1325CEC23079E1100C857ED /* PBXTargetDependency */,
+			);
+			name = "HHC For MacTests";
+			productName = "HHC For MacTests";
+			productReference = F1325CEA23079E1100C857ED /* HHC For MacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F1325CF423079E1100C857ED /* HHC For MacUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1325D0423079E1100C857ED /* Build configuration list for PBXNativeTarget "HHC For MacUITests" */;
+			buildPhases = (
+				00E5904D400FA5137587E3AA /* [CP] Check Pods Manifest.lock */,
+				F1325CF123079E1100C857ED /* Sources */,
+				F1325CF223079E1100C857ED /* Frameworks */,
+				F1325CF323079E1100C857ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1325CF723079E1100C857ED /* PBXTargetDependency */,
+			);
+			name = "HHC For MacUITests";
+			productName = "HHC For MacUITests";
+			productReference = F1325CF523079E1100C857ED /* HHC For MacUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1325CCF23079E0F00C857ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = j2x;
+				TargetAttributes = {
+					F1325CD623079E0F00C857ED = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					F1325CE923079E1100C857ED = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = F1325CD623079E0F00C857ED;
+					};
+					F1325CF423079E1100C857ED = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = F1325CD623079E0F00C857ED;
+					};
+				};
+			};
+			buildConfigurationList = F1325CD223079E0F00C857ED /* Build configuration list for PBXProject "HHC For Mac" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1325CCE23079E0F00C857ED;
+			productRefGroup = F1325CD823079E0F00C857ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1325CD623079E0F00C857ED /* HHC For Mac */,
+				F1325CE923079E1100C857ED /* HHC For MacTests */,
+				F1325CF423079E1100C857ED /* HHC For MacUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1325CD523079E0F00C857ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1C7191B2314ADC30026F774 /* ContactDetailView.xib in Resources */,
+				F1368639231D97D700A59DC7 /* ContactListCell.xib in Resources */,
+				F1F2BFC923214C4800A19D94 /* TaskDetailViewController.xib in Resources */,
+				F1368634231B0C4400A59DC7 /* TaskListViewController.xib in Resources */,
+				F1325CDE23079E1000C857ED /* Assets.xcassets in Resources */,
+				F1F2BFC42321475700A19D94 /* TaskListCell.xib in Resources */,
+				F101BFF4230F4F8E00F0FC62 /* ContentView3.xib in Resources */,
+				F1F2BFCE2322C45E00A19D94 /* TaskViewCell.xib in Resources */,
+				F1F2BFAF2320382B00A19D94 /* contactViewCell.xib in Resources */,
+				F10538C62326D2A80068FA9E /* menuItemCell.xib in Resources */,
+				F101BFF2230F4F8600F0FC62 /* ContentView2.xib in Resources */,
+				F1325CE123079E1100C857ED /* Main.storyboard in Resources */,
+				F1F2BFA5231EF26E00A19D94 /* HHCContactListViewController.xib in Resources */,
+				F101BFF0230F4F7C00F0FC62 /* ContentView1.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1325CE823079E1100C857ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1325CF323079E1100C857ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00E5904D400FA5137587E3AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HHC For MacUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		196E805898EF01BA7C410BD5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HHC For Mac/Pods-HHC For Mac-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HHC For Mac/Pods-HHC For Mac-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HHC For Mac/Pods-HHC For Mac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		19EC4142BEAD8B89376703C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HHC For Mac-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBF47815DC91922BF52317A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HHC For MacTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1325CD323079E0F00C857ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1C719102314AB360026F774 /* PXSourceListTableCellView.m in Sources */,
+				F1C719122314AB360026F774 /* PXSourceListItem.m in Sources */,
+				F1F2BFB323204B9400A19D94 /* RealmActivity.m in Sources */,
+				F1325CE423079E1100C857ED /* main.m in Sources */,
+				F1F2BFA4231EF26E00A19D94 /* HHCContactListViewController.m in Sources */,
+				F1F2BFAD2320381A00A19D94 /* contactViewCell.m in Sources */,
+				F1F2BFD12322EB4A00A19D94 /* tableRowView.m in Sources */,
+				F101BFEA230F47F500F0FC62 /* SidebarTableCellView.m in Sources */,
+				F1C719112314AB360026F774 /* PXSourceList.m in Sources */,
+				F1F2BFBF23204BC400A19D94 /* RLMActivityWithGroups.m in Sources */,
+				F1F2BFAA2320119D00A19D94 /* RealmContact.m in Sources */,
+				F1F2BFC823214C4800A19D94 /* TaskDetailViewController.m in Sources */,
+				F10538C42326D28C0068FA9E /* menuItemCell.m in Sources */,
+				F1C719132314AB360026F774 /* PXSourceListBadgeCell.m in Sources */,
+				F101BFED230F4BD700F0FC62 /* ViewController.m in Sources */,
+				F1F2BFCC2322C44C00A19D94 /* TaskViewCell.m in Sources */,
+				F1C7191A2314ADC30026F774 /* ContactDetailView.m in Sources */,
+				F1F2BFBC23204BB900A19D94 /* RLMActivityWithCompany.m in Sources */,
+				F1368633231B0C4400A59DC7 /* TaskListViewController.m in Sources */,
+				F1F2BFB623204BA200A19D94 /* RLMActivityWithContact.m in Sources */,
+				F1C719152314AB360026F774 /* PXSourceListDelegateDataSourceProxy.m in Sources */,
+				F1C719162314AB360026F774 /* PXSourceListBadgeView.m in Sources */,
+				F1F2BFC22321474000A19D94 /* TaskListCell.m in Sources */,
+				F1F2BFB923204BAF00A19D94 /* RLMActivityException.m in Sources */,
+				F1368637231D97AC00A59DC7 /* ContactListCell.m in Sources */,
+				F1325CDC23079E0F00C857ED /* AppDelegate.m in Sources */,
+				F1C719142314AB360026F774 /* PXSourceListRuntimeAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1325CE623079E1100C857ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1325CEF23079E1100C857ED /* HHC_For_MacTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1325CF123079E1100C857ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1325CFA23079E1100C857ED /* HHC_For_MacUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1325CEC23079E1100C857ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1325CD623079E0F00C857ED /* HHC For Mac */;
+			targetProxy = F1325CEB23079E1100C857ED /* PBXContainerItemProxy */;
+		};
+		F1325CF723079E1100C857ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1325CD623079E0F00C857ED /* HHC For Mac */;
+			targetProxy = F1325CF623079E1100C857ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F1325CDF23079E1100C857ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1325CE023079E1100C857ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1325CFC23079E1100C857ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F1325CFD23079E1100C857ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F1325CFF23079E1100C857ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6907E7E19841716609B3074 /* Pods-HHC For Mac.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "HHC For Mac/HHC_For_Mac.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A3ZK9W6789;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "HHC For Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.j2x.handheldcontactAPI.HHC-For-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F1325D0023079E1100C857ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1AA089C0302CC8D1086F15C /* Pods-HHC For Mac.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "HHC For Mac/HHC_For_Mac.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A3ZK9W6789;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "HHC For Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.j2x.handheldcontactAPI.HHC-For-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F1325D0223079E1100C857ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F163EE72BA2770E02C8C87C /* Pods-HHC For MacTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A3ZK9W6789;
+				INFOPLIST_FILE = "HHC For MacTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.j2x.handheldcontactAPI.HHC-For-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HHC For Mac.app/Contents/MacOS/HHC For Mac";
+			};
+			name = Debug;
+		};
+		F1325D0323079E1100C857ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8C7C8E429CBDCEF95B7BFB4 /* Pods-HHC For MacTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A3ZK9W6789;
+				INFOPLIST_FILE = "HHC For MacTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.j2x.handheldcontactAPI.HHC-For-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HHC For Mac.app/Contents/MacOS/HHC For Mac";
+			};
+			name = Release;
+		};
+		F1325D0523079E1100C857ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4A8EC516899EF5920FE9866 /* Pods-HHC For MacUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A3ZK9W6789;
+				INFOPLIST_FILE = "HHC For MacUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.j2x.handheldcontactAPI.HHC-For-MacUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "HHC For Mac";
+			};
+			name = Debug;
+		};
+		F1325D0623079E1100C857ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2268BFB7AB2C9E5BD61CCD60 /* Pods-HHC For MacUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A3ZK9W6789;
+				INFOPLIST_FILE = "HHC For MacUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.j2x.handheldcontactAPI.HHC-For-MacUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "HHC For Mac";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1325CD223079E0F00C857ED /* Build configuration list for PBXProject "HHC For Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1325CFC23079E1100C857ED /* Debug */,
+				F1325CFD23079E1100C857ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1325CFE23079E1100C857ED /* Build configuration list for PBXNativeTarget "HHC For Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1325CFF23079E1100C857ED /* Debug */,
+				F1325D0023079E1100C857ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1325D0123079E1100C857ED /* Build configuration list for PBXNativeTarget "HHC For MacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1325D0223079E1100C857ED /* Debug */,
+				F1325D0323079E1100C857ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1325D0423079E1100C857ED /* Build configuration list for PBXNativeTarget "HHC For MacUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1325D0523079E1100C857ED /* Debug */,
+				F1325D0623079E1100C857ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1325CCF23079E0F00C857ED /* Project object */;
+}

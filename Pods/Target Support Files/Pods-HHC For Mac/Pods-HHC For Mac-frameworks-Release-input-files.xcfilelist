@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-HHC For Mac/Pods-HHC For Mac-frameworks.sh
+${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
+${BUILT_PRODUCTS_DIR}/Realm/Realm.framework
+${BUILT_PRODUCTS_DIR}/SAMKeychain/SAMKeychain.framework

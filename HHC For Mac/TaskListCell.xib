@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TaskListViewController">
+            <connections>
+                <outlet property="dateTime" destination="vVD-1M-8wy" id="tMZ-fD-4GY"/>
+                <outlet property="recIcon" destination="wNk-zi-Jbz" id="7ij-9v-iPF"/>
+                <outlet property="regardingText" destination="Fd0-No-Ej6" id="Mzc-2r-fmr"/>
+                <outlet property="scheduleWith" destination="ILZ-D1-9Hl" id="xF9-O5-2me"/>
+                <outlet property="typeIcon" destination="quI-es-VtT" id="RwQ-W8-8Zg"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <tableCellView identifier="TaskListCell" id="nnQ-4N-bnh" customClass="TaskListCell">
+            <rect key="frame" x="0.0" y="0.0" width="534" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="u9p-wi-8U7">
+                    <rect key="frame" x="0.0" y="10" width="534" height="80"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Fd0-No-Ej6">
+                            <rect key="frame" x="113" y="53" width="413" height="17"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="regarding" id="RgG-4y-RiR">
+                                <font key="font" usesAppearanceFont="YES"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ILZ-D1-9Hl">
+                            <rect key="frame" x="113" y="31" width="413" height="17"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="Schedule with" id="Wfj-Xb-KyJ">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vVD-1M-8wy">
+                            <rect key="frame" x="113" y="10" width="413" height="17"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="Date/Time" id="wcE-xl-q8B">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="1j7-zd-tut">
+                            <rect key="frame" x="25" y="10" width="60" height="60"/>
+                            <subviews>
+                                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="quI-es-VtT">
+                                    <rect key="frame" x="13" y="12" width="35" height="36"/>
+                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="DASHBOARD" id="C7T-RV-tJw"/>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="quI-es-VtT" secondAttribute="trailing" constant="12" id="37a-y2-mji"/>
+                                <constraint firstAttribute="bottom" secondItem="quI-es-VtT" secondAttribute="bottom" constant="12" id="3mt-8D-tl7"/>
+                                <constraint firstAttribute="width" constant="60" id="4i3-A0-2xh"/>
+                                <constraint firstItem="quI-es-VtT" firstAttribute="leading" secondItem="1j7-zd-tut" secondAttribute="leading" constant="13" id="Ayw-ND-l97"/>
+                                <constraint firstAttribute="height" constant="60" id="WUj-KK-jU2"/>
+                                <constraint firstItem="quI-es-VtT" firstAttribute="top" secondItem="1j7-zd-tut" secondAttribute="top" constant="12" id="rfR-aG-fCd"/>
+                            </constraints>
+                        </customView>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wNk-zi-Jbz">
+                            <rect key="frame" x="484" y="24" width="30" height="30"/>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ios_recurence" id="Ljp-qb-TM5"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Fd0-No-Ej6" firstAttribute="top" secondItem="u9p-wi-8U7" secondAttribute="top" constant="10" id="0SL-UN-Z0s"/>
+                        <constraint firstAttribute="trailing" secondItem="Fd0-No-Ej6" secondAttribute="trailing" constant="10" id="5Cu-VL-OJe"/>
+                        <constraint firstItem="ILZ-D1-9Hl" firstAttribute="trailing" secondItem="Fd0-No-Ej6" secondAttribute="trailing" id="71C-bq-Rtj"/>
+                        <constraint firstItem="ILZ-D1-9Hl" firstAttribute="leading" secondItem="Fd0-No-Ej6" secondAttribute="leading" id="7H2-Uf-wCC"/>
+                        <constraint firstItem="1j7-zd-tut" firstAttribute="leading" secondItem="u9p-wi-8U7" secondAttribute="leading" constant="25" id="AFZ-aw-RtV"/>
+                        <constraint firstItem="vVD-1M-8wy" firstAttribute="trailing" secondItem="ILZ-D1-9Hl" secondAttribute="trailing" id="AVr-vF-3C0"/>
+                        <constraint firstAttribute="bottom" secondItem="1j7-zd-tut" secondAttribute="bottom" constant="10" id="IAe-ka-xrS"/>
+                        <constraint firstItem="1j7-zd-tut" firstAttribute="top" secondItem="u9p-wi-8U7" secondAttribute="top" constant="10" id="M4a-w9-HxD"/>
+                        <constraint firstAttribute="trailing" secondItem="wNk-zi-Jbz" secondAttribute="trailing" constant="20" id="Mef-Im-10y"/>
+                        <constraint firstItem="vVD-1M-8wy" firstAttribute="top" secondItem="ILZ-D1-9Hl" secondAttribute="bottom" constant="4" id="Nfc-wp-TVj"/>
+                        <constraint firstItem="Fd0-No-Ej6" firstAttribute="leading" secondItem="1j7-zd-tut" secondAttribute="trailing" constant="30" id="keN-JE-L93"/>
+                        <constraint firstItem="wNk-zi-Jbz" firstAttribute="top" secondItem="u9p-wi-8U7" secondAttribute="top" constant="26" id="mkb-KX-Gfi"/>
+                        <constraint firstItem="vVD-1M-8wy" firstAttribute="leading" secondItem="ILZ-D1-9Hl" secondAttribute="leading" id="rQL-jP-MCx"/>
+                        <constraint firstItem="ILZ-D1-9Hl" firstAttribute="top" secondItem="Fd0-No-Ej6" secondAttribute="bottom" constant="5" id="sNT-Ri-Jay"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="u9p-wi-8U7" firstAttribute="top" secondItem="nnQ-4N-bnh" secondAttribute="top" constant="10" id="7Bk-fb-9yZ"/>
+                <constraint firstAttribute="trailing" secondItem="u9p-wi-8U7" secondAttribute="trailing" id="Mn4-xh-url"/>
+                <constraint firstItem="u9p-wi-8U7" firstAttribute="leading" secondItem="nnQ-4N-bnh" secondAttribute="leading" id="WKv-wM-s1I"/>
+                <constraint firstAttribute="bottom" secondItem="u9p-wi-8U7" secondAttribute="bottom" constant="10" id="st0-Xa-2Sr"/>
+                <constraint firstAttribute="trailing" secondItem="u9p-wi-8U7" secondAttribute="trailing" id="ywq-90-dBy"/>
+            </constraints>
+            <connections>
+                <outlet property="imageBackground" destination="1j7-zd-tut" id="biz-Kz-SKZ"/>
+                <outlet property="lightshadowView" destination="u9p-wi-8U7" id="CaK-Wr-fQn"/>
+            </connections>
+            <point key="canvasLocation" x="230" y="73"/>
+        </tableCellView>
+    </objects>
+    <resources>
+        <image name="DASHBOARD" width="64" height="65"/>
+        <image name="ios_recurence" width="30" height="30"/>
+    </resources>
+</document>

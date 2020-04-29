@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ViewController"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <tableCellView identifier="menuItemCell" id="2OJ-FB-77e" customClass="menuItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="545" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="7ly-3T-BXQ">
+                    <rect key="frame" x="0.0" y="0.0" width="545" height="60"/>
+                    <subviews>
+                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZgV-sH-n3W">
+                            <rect key="frame" x="56" y="21" width="463" height="17"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="VHz-BD-FEv">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EGW-zt-tVM">
+                            <rect key="frame" x="20" y="15" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSActionTemplate" id="btb-X1-F3U"/>
+                        </imageView>
+                    </subviews>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="7ly-3T-BXQ" firstAttribute="leading" secondItem="2OJ-FB-77e" secondAttribute="leading" id="BUv-zs-iKc"/>
+                <constraint firstItem="7ly-3T-BXQ" firstAttribute="top" secondItem="2OJ-FB-77e" secondAttribute="top" id="Me9-yl-imx"/>
+                <constraint firstAttribute="trailing" secondItem="7ly-3T-BXQ" secondAttribute="trailing" id="QgK-Ja-l5m"/>
+                <constraint firstAttribute="bottom" secondItem="7ly-3T-BXQ" secondAttribute="bottom" id="Tzc-mn-J9J"/>
+            </constraints>
+            <connections>
+                <outlet property="cellBackground" destination="7ly-3T-BXQ" id="ZAA-0z-U9O"/>
+                <outlet property="imageView" destination="EGW-zt-tVM" id="2ml-bH-9PF"/>
+                <outlet property="textField" destination="ZgV-sH-n3W" id="GhV-VR-kxx"/>
+            </connections>
+            <point key="canvasLocation" x="88.5" y="132"/>
+        </tableCellView>
+    </objects>
+    <resources>
+        <image name="NSActionTemplate" width="14" height="14"/>
+    </resources>
+</document>
